@@ -5,7 +5,7 @@ import { ContainerMain, Title } from "./style";
 
 const Display = () => {
   return (
-    <div>
+    <>
       <Title>Carrinho Com Context</Title>
       <CatalogueProvider>
         <CartProvider>
@@ -17,7 +17,7 @@ const Display = () => {
           </ContainerMain>
         </CartProvider>
       </CatalogueProvider>
-    </div>
+    </>
   );
 };
 export default Display;

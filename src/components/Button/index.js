@@ -4,9 +4,8 @@ import { CatalogueContext } from "../../Providers/Catalogue";
 import { Btn } from "./style";
 
 const Button = ({ type, item }) => {
-  const { cart, addToCart, removeFromCart } = useContext(CartContext);
-  const { catalogue, addToCatalogue, removeFromCatalogue } =
-    useContext(CatalogueContext);
+  const { addToCart, removeFromCart } = useContext(CartContext);
+  const { addToCatalogue, removeFromCatalogue } = useContext(CatalogueContext);
 
   const text = type === "catalogue" ? "Add to cart" : "Remove from cart";
 
